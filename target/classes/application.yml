@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+  servlet:
+    context-path: /escope
+spring:
+  resources:
+    static-locations: classpath:/templates/
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+    static-path-pattern: /main/**
+  thymeleaf:
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: false
+
